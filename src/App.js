@@ -1,10 +1,15 @@
 import React from 'react';
 import logo from './logo.svg';
+import {Helmet} from "react-helmet";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
+      <Helmet>
+        <title>Test</title>
+      </Helmet>
+
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

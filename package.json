@@ -5,6 +5,7 @@
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-helmet": "^5.2.1",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -15,6 +16,15 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "puppeteer": {
+      "waitUntil": "networkidle0"
+    }
   },
   "browserslist": {
     "production": [
@@ -27,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }
